@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="460dp" >
+
+        <TextView
+            android:id="@+id/apk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/apkname"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/applabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/apk"
+            android:paddingLeft="24dp" />
+
+        <TextView
+            android:id="@+id/pack_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/applabel"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/package_name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/package_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pack_name"
+            android:paddingLeft="24dp"  />
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/package_name"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="18dp"
+            android:text="@string/version"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/version_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/version"
+            android:paddingLeft="24dp"  />
+
+        <TextView
+            android:id="@+id/req_feature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:layout_below="@+id/version_name" />
+
+        <TextView
+            android:id="@+id/req_permission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:layout_below="@+id/req_feature" />
+
+        <TextView
+            android:id="@+id/path_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/path_info"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/req_permission"
+            android:layout_alignLeft="@+id/version"
+            android:layout_alignStart="@+id/version" />
+
+        <TextView
+            android:id="@+id/path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/path_info"
+            android:paddingLeft="24dp"  />
+
+        <TextView
+            android:id="@+id/and_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/path"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="18dp"
+            android:text="@string/req_version"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/andversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/and_version"
+            android:paddingLeft="24dp"  />
+
+        <TextView
+            android:id="@+id/insdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:layout_below="@+id/andversion" />
+
+        <TextView
+            android:id="@+id/last_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:layout_below="@+id/insdate" />
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check for Updates"
+            android:id="@+id/inbox"
+            android:onClick="update"
+            android:layout_below="@+id/insdate"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</ScrollView>
